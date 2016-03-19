@@ -1,0 +1,16 @@
+<table>
+    	<tr>
+		<td>#</td>
+		<td>name</td> 
+		<td>food</td> 
+		<td>restaurant</td> 
+		<td>notes</td> 
+	</tr>
+    	<tr ng-repeat='order in adminModel.allOrders'>
+		<td>{{$index+1}}</td>
+		<td>{{order.fName}} {{order.lName}}</td> 
+		<td>{{order.foodName}}</td> 
+		<td>{{order.restaurantName}}</td> 
+		<td>{{order.notes}}</td>
+	</tr>
+</table>

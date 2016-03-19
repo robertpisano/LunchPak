@@ -1,0 +1,11 @@
+<div style="margin: 10px;">
+    <p>enter the <strong>ingredients</strong></p>
+    <table>
+    <tr ng-repeat='ingredient in wizbiz.ingr'>
+        <td><input type="text" ng-model="ingredient.name"/>  </td>
+        <td><div ng-click="lpAddCtrl.removeIngredient($index)">[ - ]</div>                  </td>
+    </tr>
+</table>
+<p ng-click="lpAddCtrl.newIngredient()">[ + ]</p>
+
+</div>

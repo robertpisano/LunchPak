@@ -1,0 +1,12 @@
+<div style="margin: 10px;">
+    <p>enter the <strong>options</strong></p>
+    <table>
+    <tr ng-repeat='option in wizbiz.options'>
+        <td><input type="text" placeholder="option name" ng-model="option.name"/>  </td>
+	<td><input type="text" placeholder="option type" ng-model="option.optionType"/>  </td>
+	<td><input type="text" placeholder="option value" ng-model="option.values"/>  </td>
+        <td><div ng-click="lpAddCtrl.removeOption($index)">[ - ]</div>                  </td>
+    </tr>
+</table>
+<p ng-click="lpAddCtrl.newOption()">[ + ]</p>
+</div>

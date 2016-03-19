@@ -1,0 +1,8 @@
+<div style="margin: 10px;">
+    <p>Select the <strong>Restaurant</strong>.</p>
+	<form>
+    		<ul>
+			<li ng-repeat="restaurant in $root.metaModel.restaurants"> <input type="radio" name="restaurantID" value={{restaurant.name}} ng-model='wizbiz.restaurantID' />{{restaurant.name}}</li>
+		</ul>
+	<form>
+</div>

@@ -1,0 +1,22 @@
+<h4 style='display:inline;'> HOME </h4> <div class='button' id='logOutButton' ng-click='lpHomeCtrl.logOut()'>Exit</div>
+
+<div class='narrowCenterColumn'>
+	<h5> Hello, {{userModel.fName}} </h5>
+	<p ng-show="hasOrdered">You Ordered for the day! Your order is: Food 				
+			Name : {{orderModel.currentOrder.foodName}} </br>
+			Restaurant :{{orderModel.currentOrder.restaurantName}} </br>
+			Notes: {{orderModel.currentOrder.notes}} </p>
+	<p ng-hide="hasOrdered"> We don't have an order stored for you. Have you ordered yet today? </p>
+		
+</div>
+
+
+
+
+		
+
+<div class="fatNavigation">
+	<a class='fatNavLink' href="#/order"> Place Order </a>
+    	<a class='fatNavLink' href="#/myAccount"> My Account </a>
+	<a class='fatNavLink' href="#/admin" ng-show="userModel.isLunchAdmin"> Admin Console </a>
+</div>

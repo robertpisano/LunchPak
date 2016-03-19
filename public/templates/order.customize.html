@@ -1,0 +1,13 @@
+<h5>Food Name : {{orderModel.currentOrder.foodName}}</h5>
+<h5>Restaurant :{{orderModel.currentOrder.restaurantName}}</h5>
+<br><br>
+<table style="width: 80%; margin-right: 10%; margin-left:10%">
+    <tr ng-repeat='note in orderModel.currentOrder.notes' >
+        <td style="width:90%;"><input type="text" ng-model="note.note"/>  </td>
+        <td style="width:10%;"><div class='button' style="width:auto;" ng-click="lpOrderCtrl.removeNote($index)">X</div> </td>
+    </tr>
+</table>
+<p class='button' style="margin-left: 60%;width:auto;" ng-click="lpOrderCtrl.newNote()">new note</p>
+<br><br>
+<div class="addlink" ng-click='lpOrderCtrl.fireOrder()'style="text-align:center; width: 50%; margin-right: 25%; margin-left:25%;margin-top: 1em;">order!</div>
+<a ui-sref="order.results"><div class="addlink" style="text-align:center; width: 50%; margin-right: 25%; margin-left:25%;margin-top: 1em;">back to results</div></a>

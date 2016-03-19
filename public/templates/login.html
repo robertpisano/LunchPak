@@ -1,0 +1,10 @@
+<h4 style="text-align:center">login</h4>
+<div class="narrowCenterColumn">
+	<label>email:</label><input type="text" ng-model='userModel.email' />
+	<label>password:</label><input type="password" ng-model='userModel.password'/>
+</div>
+<div class='button' style="width:20%;margin-left:40%;margin-right:40%;"ng-click="lpLoginCtrl.checkUser()">log in!</div>
+<br>
+<a ui-sref='createUser'>Create User</a>
+<br>
+<a ui-sref='forgotPassword'>Forgot Password?</a>

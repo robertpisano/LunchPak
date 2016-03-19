@@ -1,0 +1,24 @@
+
+<div class = 'body-item'>
+	<table style="width:80%; margin-right:10%; margin-left:10%;">
+		<tr>
+			<td> name </td>
+			<td> restaurant </td>
+			<td> price </td>
+			<td> tags </td>
+		</tr>
+
+		<tr ng-repeat='item in orderModel.results' ng-click="lpOrderCtrl.chooseItem($index)">
+			<td> {{item.name}} </td>
+			<td> {{item.restaurantName}}</td>
+			<td> {{item.price}} </td>
+			<td> {{item.tags.join(', ')}} </td>
+		</tr>
+	</table>
+</div>	
+
+<div class="narrowCenterColumn">
+	<p style="text-align:center; margin-bottom:.25em;"> Couldn't find what you were looking for?</p>
+	<a href="#/order/add"><div class="addlink" style="text-align:center; width: 50%; margin-right: 25%; margin-left:25%;">Add Item</div></a>
+	<a ui-sref="order.search"><div class="addlink" style="text-align:center; width: 50%; margin-right: 25%; margin-left:25%;margin-top: 1em;">Back to Search</div></a>
+</div>

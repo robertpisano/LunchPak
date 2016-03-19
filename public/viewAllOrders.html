@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="lpApp">
+<head>
+    <title>lunchpak mk II</title> 
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/foundation/4.3.2/css/foundation.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    
+<p> this probably doesn't work right now</p>
+
+<table>
+    <tr><td>name</td> <td>food</td> <td>restaurant</td> <td>notes</td> <td>option</td> </tr>
+    <tr ng-repeat='order in adminModel.restaurants'><td>{{order.name}}</td> <td>{{order.food}}</td> <td>{{order.restaurant}}</td> <td>{{order.notes}}</td> <td>{{order.option}}</td> </tr>
+</table>
+
+    
+<script src="lib/angular/angular.js"></script>
+<script src="lib/angular/angular-resource.js"></script>
+<script src="lib/angular-ui-router.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js"></script>
+
+<script src="js/app.js"></script>
+
+</body>
+</html>

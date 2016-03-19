@@ -1,0 +1,19 @@
+<div style='width:100%; height:100px; margin-bottom:50px'>
+	<div style="width: 20%; float:left; background-color:#CCC">
+		
+			<a href="#/order/add/name" class='button' style="width: 100%;height: 1.5em;padding-top: .08em;padding-bottom: .08em;padding-right:.08em;padding-left:.08em;background-color: #0090a0;">Name</a> </br>
+			<a href="#/order/add/price" class='button' style="width: 100%;height: 1.5em;padding-top: .08em;padding-bottom: .08em;padding-right:.08em;padding-left:.08em;background-color: #0090a0;">Price</a> </br>
+			<a href="#/order/add/tag" class='button' style="width: 100%;height: 1.5em;padding-top: .08em;padding-bottom: .08em;padding-right:.08em;padding-left:.08em;background-color: #0090a0;">Tags</a></br>
+			<a href="#/order/add/restaurant" class='button' style="width: 100%;height: 1.5em;padding-top: .08em;padding-bottom: .08em;padding-right:.08em;padding-left:.08em;background-color: #0090a0;">Restaurant</a>
+		
+	</div>
+
+	<div ui-view style="width: 75%; float: right"></div>
+</div>
+</br>
+</br>
+</br>
+</br>
+<a ui-sref='order.results' style="width:auto;" class='button'>Back to Results</a>
+<input type='button' class='button' style="float:right;" ng-click='lpAddCtrl.fireAdd()' value='Add!' />
+

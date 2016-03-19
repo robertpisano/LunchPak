@@ -1,0 +1,12 @@
+<div style="margin-top: 50px;margin-right:auto; margin-left:auto; width: 50%">
+<form>
+	<label>first name</label><input type='text' required ng-model="userModel.fName"><br>
+	<label>last name</label><input type='text' required ng-model="userModel.lName"><br>
+	<label>email</label><input type='text' required ng-model="userModel.email"><br>
+	<label>send me email notifications!</label><input type='checkbox' ng-model="userModel.wantsEmail"><br>
+	<!--<label>I have these allergies:</label><input type='text'><br>-->
+	<label>password</label><input type='password' required ng-model="userModel.password"><br>
+	<label>password again</label><input type='password' required ng-model="userModel.password2"><br>
+	<button type="submit" ng-click="editAccountCtrl.updateUser()"> OK </button>
+</form>
+</div>

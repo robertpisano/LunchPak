@@ -1,0 +1,169 @@
+@charset "utf-8";
+/* CSS Document */
+
+th, td {
+    overflow-x: hidden;
+    max-width: 100px;
+}
+#logOutButton{
+	width: 15%;
+	height: 1.5em;
+	float:right;
+	padding-top: .08em;
+	padding-bottom: .08em;
+	padding-right:.08em;
+	padding-left:.08em;
+	background-color: #0090a0;
+}
+
+#banner{
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+#content{
+	width: 600px;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 10px;
+	//padding-top: 10px;
+	background-color: #CCC;
+	border-radius: 2em;
+	
+}
+
+#searchBar{
+	margin:5%;
+	height:3em;
+	width:60%;
+	display:inline-block;
+}
+
+.titleBox{
+	width: 250px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.subtitleBox{
+	width: 275px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+
+.body-item{
+	width: 90%
+	margin: 5%;
+}
+
+.sidebar {
+	width: 25%;
+	margin-right: 5%;
+	float: left;
+	border: 1px dashed white;
+	background-color:inherit;
+}
+
+.navigation{
+	background-color: white;
+	height: 2em;
+	width: 580px;
+	margin-top: 15px;
+	clear:both;
+	border-radius: 2em;
+}
+
+.fatNavigation{
+	background-color: white;
+	height: auto;
+	width: 90%;
+	margin-right:auto;
+	margin-left: auto;
+	margin-top: 15px;
+	clear:both;
+	border-radius: 2em;
+	border: 3px solid #EEE;
+	padding:2em;
+	text-align: center;
+}
+
+.navLink{
+	padding: 7px;
+	margin-left:10px;
+	float:right;
+}
+
+.fatNavLink{
+	text-align: center;
+	height: 2em;
+	width: 20%;
+	padding:4%;
+	border: 1% solid #E2E2E2;
+	background-color: #CCC;
+	border-radius:1em;
+	margin-left:2%;
+	margin-right:2%;
+}
+.button{
+	width: 25%;
+	height: 3em;
+}
+
+.panel{
+	width: 90%;
+	margin-right: 5%;
+	margin-left:  5%;
+	height:10em;
+	//padding:10%;
+	text-align: center;
+	border:10%;
+	border-radius:.5em;
+	background-color: #CDC;
+	display:inline-block;
+	float:left;
+}
+
+.panel:hover{
+	background-color: #CDB;
+}
+
+.addlink{
+	padding:5%;
+	border:5%;
+	border-radius:.5em;
+	background-color: #CDC;
+	display:inline-block;
+	right: 50%;
+	
+}
+
+.addlink:hover{
+	background-color: #CDB;
+}
+
+.narrowCenterColumn{
+	width: 50%;
+	margin-right:auto;
+	margin-left:auto;
+}
+
+#pastBox, #peerBox{
+	margin: 2%;
+	width:46%;
+	float:left;
+		
+}
+
+@media (max-width: 600px) {
+#content{
+	width: 100%;
+	margin-right:0;
+	margin-left:0
+}
+#pastBox, #peerBox{
+	width:90%;
+	float: none;
+}
+}
+

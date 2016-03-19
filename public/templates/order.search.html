@@ -1,0 +1,12 @@
+<div id="searchBox" ng-show="showSearchBox=true" class='body-item'>
+	<form ng-submit="lpOrderCtrl.fireSearch()">
+		<input type="text" style="width: 70%;margin-right:15%;margin-left:15%;" id='searchBar' ng-model="orderModel.query" placeholder="Hungry?  Start typing here!">
+	</form>
+</div>
+<div class = "narrowCenterColumn">	
+	<a href="#/order/results"><div ng-click="fireSearch()" class="panel">Popular</div></a>
+	<a href="#/order/results"><div ng-click="fireSearch()" class="panel">Peer Orders</div></a>
+	<div ng-click="lpOrderCtrl.findOldOrders()" class="panel">Past Orders</div>
+</div>
+
+
